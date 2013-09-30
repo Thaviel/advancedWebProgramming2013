@@ -28,7 +28,6 @@
     <!--@@@@@@@END SLIDER@@@@@@@@-->
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -41,43 +40,25 @@
         <header class="wrapper clearfix">
 
             <img src="images/logo.gif" />
-            <h1 class="title">Portfolio Site</h1>
+            <h1 class="title"> Projects </h1>
 
-            <nav>
+			 <nav>
                 <div id="nav">
 
-<!--                    <button id="button1" class="addtext" data-text="Some text from button 1">Button 1</button>
-                    <button class="home">Home</button>
-                    <button class="aboutMe">About Me</button>
-                    <button class="Projects">Projects</button>
-                    <button class="Projects">Projects</button>
-                    <button class="Services">Services</button>
-                    <button class="GitHub<">GitHub</button>
-                    <button class="contactMe<">Contact Me</button>-->
 
                        <div > <a href="http://webdesign4.georgianc.on.ca/~100124206/">>Home</a> </div>
                     <div > <a href="http://webdesign4.georgianc.on.ca/~100124206/AboutMe.html">About Me</a> </div>
                     <div > <a href="http://webdesign4.georgianc.on.ca/~100124206/Projects.html">Projects</a> </div>
-                    <div > <a href="http://webdesign4.georgianc.on.ca/~100124206/Services.html">Services</a> </div>
+                    <div > <a href="#">Services</a> </div>
                     <div > <a href="http://webdesign4.georgianc.on.ca/~100124206/ContactMe.html">Contact Me</a> </div>
                 </div>
             </nav>
-        </header>
-    </div>
 
+		</header>
     <div class="main-container">
         <div class="main wrapper clearfix">
             <div class="Content">
                 <article>
-                    <header>
-
-                        <div id="textbox"></div>
-                        <h1>Personal Tagline </h1>
-
-                        <p>Hi I'm kenny woolhead I program, this is probubly not the site you are looking for. </p>
-                    </header>
-                    <div class="fill">
-                    </div>
                     <section>
                         <div class="liquid-slider" id="main-slider">
                             <div>
@@ -101,24 +82,9 @@
                             </div>
                         </div>
                     </section>
-
-                    <footer>
-                        <h3>Mission statment</h3>
-                        <p>once when I was younger I was tricked into thinking that programming was all about logic puzzles and efficently getting past problums using a set of skills directly linked to programming. That is how I decided to become a programmer now I do it because it's what I know and enjoy doing. </p>
-                    </footer>
                 </article>
             </div>
             <!--@@~~CONTENT~~@@-->
-
-            <aside>
-                <h3>Keep Connected</h3>
-                <a class="twitter-timeline" href="https://twitter.com/Thaviel" data-widget-id="384564773917958144">Tweets by @Thaviel</a>
-                <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
-
-
-            </aside>
-
-
 
         </div>
         <!-- #main -->
@@ -142,15 +108,20 @@ Copyright (c) 2007 Free Software Foundation, Inc. <a href="http://fsf.org">http:
         </footer>
     </div>
 
-<!--    <script>
+
+
+
+
+
+    <script>
 
         $(document).ready(function () {
-            $('.buttons button').on('click', function () {
-                $('#textbox').text('Some text from Button ' + $(this).prop('id').split('button')[1]);
+            $('.addtext').click(function () {
+                $('#textbox').text($(this).data("text"));
             });
         });
 
-    </script>-->
+    </script>
 
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
