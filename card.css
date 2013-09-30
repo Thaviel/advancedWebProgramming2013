@@ -1,0 +1,73 @@
+﻿Body {
+    color: white;
+    font-size: 1em;
+}
+#Card {
+    background-image: url("images/background.png");
+    background-size: 100%;
+    border-color: black;
+    border-style: solid;
+    /* border-width: thin; */
+    font-size: 1em;
+    min-height: 20px;
+    padding: 0;
+    width: 50%;
+	min-width: 235px;
+}
+#Header {
+    margin: 6% 0 0 6%;
+	overflow:auto
+}
+#Name {
+	float:left;
+    vertical-align: top;
+}
+#ManaCost {
+    float:right;
+	overflow: hidden;
+	margin-Right:4%;
+}
+#Mana {
+
+}
+
+#Name {
+    width:60%;
+}
+
+img {   
+}
+#Pic {
+    margin: 4%;
+    /* height: 45%; */
+    margin: 0;
+    padding-Left: 20%;
+    vertical-align: top;
+    width: 40%;
+}
+
+#RulesText {
+
+    margin: 4% 0 0 4%;
+    min-height: 20px;
+    padding: 5px;
+}
+
+#cardType {
+    float: left;
+}
+
+#CardText {
+    margin: 5%;
+}
+#ReminderText {
+    font-style: italic;
+    min-height: 20px;
+    padding-left: 13%;
+	padding-Right: 13%;
+    vertical-align: bottom;
+
+}
+root {
+    display: block;
+}
