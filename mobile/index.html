@@ -1,54 +1,146 @@
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
-<!DOCTYPE HTML>
-	<head>
-		<title>Capital website for Iphone, Android, Smartphone Mobile Website Template | Home :: w3layouts</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-		</script>
-		<link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />
-		<link href='http://fonts.googleapis.com/css?family=Monda' rel='stylesheet' type='text/css'>	
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-		  <script type="text/javascript" src="js/jquery.easing.1.3.js"></script> 
-		    <script type="text/javascript" src="js/camera.min.js"></script>
+<!-- Example jQuery Mobile File -->
+    <!--
+
+        File name: index.html
+					enny's Mobile Portfolio
+			
+        Author's name: Kenny Woolhead
+
+        web site name: http://webdesign4.georgianc.on.ca/~100124206/
+
+       file description: midterm site
+       						showing a jquery mobile site used for taking a survey
+
+    -->
 
 
-		</script>
-	</head>
-	<body>
-		<!---start-wrap----->
-			<!---start-header----->
-			<div class="header" id="top">
-				<div class="wrap">
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kenny's Mobile Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.css" />
+<script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
 
-				<!---start-top-nav----->
-				<div class="top-nav">
-					<ul>
-						<li class="active"> <a href="http://webdesign4.georgianc.on.ca/~100124206/">>Home</a> </li>
-						<li><a href="http://webdesign4.georgianc.on.ca/~100124206/AboutMe.html">About Me </a>
-						<!--
-						<ul class="sub">
-							<li><a href="#">Services 1</a></li>
-							<li><a href="#">Services 2</a></li>
-							<li><a href="#">Services 3</a></li>
-						</ul>
-							-->
-						</li>
-						
-						
-						<li><a href="http://webdesign4.georgianc.on.ca/~100124206/Projects.html">Projects</a> </li>
-						<li><a href="http://webdesign4.georgianc.on.ca/~100124206/Services.html">Services</a></li>
-						<li><a href="http://webdesign4.georgianc.on.ca/~100124206/ContactMe.html">Contact Me</a></li>
-						<div class="clear"> </div>
-					</ul>
-				</div>
-				<div class="clear"> </div>
-				<!---End-top-nav----->
-			</div>
-			<!---End-header----->
-		
+</head>
+
+<body>
+
+
+<!-- this is the  home page section -->
+
+<div data-role="page" id="home">
+  <div data-role="header" data-theme="c">
+    <img id='img' src="logo.gif" alt="LOGO kenny woolhead inc.co.un.col.gif"> <h1>Personality	Survey</h1>
+  </div>
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#home" class="ui-btn-active ui-state-persist" data-theme="c" data-icon="home">Home</a></li>
+      <li><a href="#survey"data-theme="c" data-icon="grid">Survey</a></li>
+      <li><a href="#contact"data-theme="c" data-icon="info">Contact</a></li>
+    </ul>
+  </div>
+  <section role="main" class="ui-content">
+    <img id='img' src="ColourWheel.png" alt="Picture displaying the type of personality you are represented by a color">
+  </section>
+  <div data-role="footer" data-theme="c" data-position="fixed">
+    <h4>COPYRIGHT 2014</h4>
+    
+</p>
+  </div>
+</div>
+<!-- end of homepage -->
+
+
+
+<!-- this is the servives ##change to survey -->
+
+<div data-role="page" id="survey">
+  <div data-role="header"data-theme="c">
+    <h1>Survey Questions</h1>
+  </div>
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#home" data-theme="c" data-icon="home"data-transition="flip">Home</a></li>
+      <li><a href="#survey" class="ui-btn-active ui-state-persist" data-theme="c" data-icon="grid">Survey</a></li>
+      <li><a href="#contact"data-theme="c" data-icon="info">Contact</a></li>
+    </ul>
+  </div>
+  
+  
+  
+
+  
+  
+  <div data-role="content"> <a href="#dialog1" class="ui-btn ui-shadow ui-btn-inline ui-btn-b">my Dialog</a> </div>
+  <div data-role="footer"data-theme="c"data-position="fixed">
+    <h4>COPYRIGHT 2014</h4>
+  </div>
+</div>
+
+
+
+<!-- this is the contacts -->
+
+<div data-role="page" id="contact">
+  <div data-role="header"data-theme="c">
+    <h1>Contact Me</h1>
+  </div>
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#home" data-theme="c" data-icon="home"data-transition="flip">Home</a></li>
+      <li><a href="#survey" data-theme="c" data-icon="grid">Survey</a></li>
+      <li><a href="#contact" class="ui-btn-active ui-state-persist" data-theme="c" data-icon="info">Contact</a></li>
+    </ul>
+  </div>
+  <div data-role="content">
+    <form action="" method="get" name="contactForm">
+
+  		First name: <input type="text" name="fname"><br>
+  		Last name: <input type="text" name="lname"><br>
+        
+        Contact Number: <input type="text" name="Cnumber"><br>
+        
+        Email: <input type="text" name="Email"><br>
+
+      <button class="ui-btn ui-corner-all" data-theme="c">submit</button>
+    </form>
+    
+  </div>
+  <div data-role="footer"data-theme="c"data-position="fixed">
+    <h4>COPYRIGHT 2014</h4>
+  </div>
+</div>
+
+
+<!-- dialog box for the submit in the survey/survey page -->
+
+<div data-role="page" id="dialog1" data-dialog="true">
+  <div data-role="header"data-theme="c">
+    <h1>Your results</h1>
+  </div>
+  <div data-role="content">
+    <table border="1">
+<tr>
+  <td>A (RED)</td>
+  <td>B (YELLOW)</td>		
+  <td>C (GREEN)</td>
+  <td>D (BLUE) </td>
+ </rt>
+<tr>
+  <td id=R1> #RESULT  </td>
+  <td id=R2> #RESULT </td>		
+  <td id=R3> #RESULT </td>
+ <td id=R4> #RESULT  </td>
+</tr>
+</table>
+    
+    <a href="#home" class="ui-btn ui-corner-all" data-icon="home" data-transition="flip">OK</a>
+ 
+    
+  </div>
+</div>
+</body>
+</html>
 
