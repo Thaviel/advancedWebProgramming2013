@@ -8,8 +8,8 @@
 
         web site name: http://webdesign4.georgianc.on.ca/~100124206/
 
-       file description: midterm site
-       						showing a jquery mobile site used for taking a survey
+       file description: mobile version of my online protfolio
+       						showing a jquery mobile site used for looking at my portfolio on your phone
 
     -->
 
@@ -32,18 +32,19 @@
 
 <div data-role="page" id="home">
   <div data-role="header" data-theme="c">
-    <img id='img' src="logo.gif" alt="LOGO kenny woolhead inc.co.un.col.gif"> <h1>Personality	Survey</h1>
+    <img id='img' src="/images/logo.gif" alt="LOGO kenny woolhead"> <h1>Portfolio</h1>
   </div>
   <div data-role="navbar">
     <ul>
       <li><a href="#home" class="ui-btn-active ui-state-persist" data-theme="c" data-icon="home">Home</a></li>
-      <li><a href="#survey"data-theme="c" data-icon="grid">Survey</a></li>
+      <li><a href="#aboutme"data-theme="c" data-icon="grid">About me</a></li>
+	  <li><a href="#Services"data-theme="c" data-icon="grid">Services</a></li>
       <li><a href="#contact"data-theme="c" data-icon="info">Contact</a></li>
     </ul>
   </div>
   <section role="main" class="ui-content">
-    <img id='img' src="ColourWheel.png" alt="Picture displaying the type of personality you are represented by a color">
-  </section>
+
+  
   <div data-role="footer" data-theme="c" data-position="fixed">
     <h4>COPYRIGHT 2014</h4>
     
@@ -54,7 +55,7 @@
 
 
 
-<!-- this is the servives ##change to survey -->
+<!-- this is the about me page  -->
 
 <div data-role="page" id="survey">
   <div data-role="header"data-theme="c">
@@ -63,7 +64,8 @@
   <div data-role="navbar">
     <ul>
       <li><a href="#home" data-theme="c" data-icon="home"data-transition="flip">Home</a></li>
-      <li><a href="#survey" class="ui-btn-active ui-state-persist" data-theme="c" data-icon="grid">Survey</a></li>
+      <li><a href="#aboutme" class="ui-btn-active ui-state-persist"  data-theme="c" data-icon="grid">Survey</a></li>
+	  <li><a href="#Services"  data-theme="c" data-icon="grid">Services</a></li>
       <li><a href="#contact"data-theme="c" data-icon="info">Contact</a></li>
     </ul>
   </div>
@@ -81,7 +83,35 @@
 
 
 
-<!-- this is the contacts -->
+
+<!-- this is services page about me -->
+
+<div data-role="page" id="contact">
+  <div data-role="header"data-theme="c">
+    <h1>Services</h1>
+  </div>
+  <div data-role="navbar">
+    <ul>
+      <li><a href="#home" data-theme="c" data-icon="home"data-transition="flip">Home</a></li>
+      <li><a href="#aboutme" data-theme="c" data-icon="grid">Survey</a></li>
+	  <li><a href="#Services" class="ui-btn-active ui-state-persist"  data-theme="c" data-icon="grid">Services</a></li>
+      <li><a href="#contact" data-theme="c" data-icon="info">Contact</a></li>
+    </ul>
+  </div>
+  <div data-role="content">
+
+    
+  </div>
+  <div data-role="footer"data-theme="c"data-position="fixed">
+    <h4>COPYRIGHT 2014</h4>
+  </div>
+</div>
+
+
+
+
+
+<!-- this is the contacts  page -->
 
 <div data-role="page" id="contact">
   <div data-role="header"data-theme="c">
@@ -90,7 +120,8 @@
   <div data-role="navbar">
     <ul>
       <li><a href="#home" data-theme="c" data-icon="home"data-transition="flip">Home</a></li>
-      <li><a href="#survey" data-theme="c" data-icon="grid">Survey</a></li>
+      <li><a href="#aboutme" data-theme="c" data-icon="grid">Survey</a></li>
+	  <li><a href="#Services"data-theme="c" data-icon="grid">Services</a></li>
       <li><a href="#contact" class="ui-btn-active ui-state-persist" data-theme="c" data-icon="info">Contact</a></li>
     </ul>
   </div>
