@@ -23,10 +23,12 @@
 <script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
 
+	<link href='http://fonts.googleapis.com/css?family=Monda' rel='stylesheet' type='text/css'>	
     <!--THIS IS ALL SLIDER STUFF-->
     <link rel="stylesheet" href="./css/animate.css">
     <!-- Optional -->
     <link rel="stylesheet" href="./css/liquid-slider.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <!--@@@@@@@END SLIDER@@@@@@@@-->
 
 </head>
@@ -50,6 +52,27 @@
   </div>
   <section role="main" class="ui-content">
 
+  <section>
+    <div class="liquid-slider" id="main-slider">
+            <div>
+                <h2 class="title">Magic Card</h2>
+                <object data="card.html">
+                    <embed src="http://webdesign4.georgianc.on.ca/~100124206/card.html"> </embed>
+                </object>
+            </div>
+            <div>
+                <h2 class="title">Youtube</h2>
+                <iframe src="//www.youtube.com/embed/IQDkPTTs3bg"></iframe>
+                solo roshan meepo lvl 11
+            </div>
+            <div>
+                <h2 class="title">Inception</h2>
+                <object data="http://webdesign4.georgianc.on.ca/~100124206/index.html">
+                    <embed src="http://webdesign4.georgianc.on.ca/~100124206/index.html"> </embed>
+                </object>
+            </div>
+        </div>
+    </section>
   
   <div data-role="footer" data-theme="c" data-position="fixed">
     <h4>2007 Free Software Foundation (C)</h4>
@@ -179,5 +202,17 @@
   </div>
 </div>
 </body>
+
+   <script src="./js/jquery.easing.1.3.js"></script>
+    <script src="./js/jquery.touchSwipe.min.js"></script>
+    <script src="./js/jquery.liquid-slider-custom.min.js"></script>
+    <script>
+        $('#main-slider').liquidSlider();
+
+        /* If you need to access the internal property or methods, use this:
+        var api = $.data( $('#slider-id')[0], 'liquidSlider');
+        */
+    </script>
+
 </html>
 
